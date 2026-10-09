@@ -12,7 +12,7 @@ codename = "rumi"
 arch = "x86_64"
 filename = "kernel/ros_kernel-v0.3.29-rumi"
 size = 14224792
-sha256 = "277969cc6bc9d6b2191b4f9d6e8057a56ad271ad4fce1cc7c55ca6c56a789984"
+sha256 = "9700790cdd86c6ddc7444f20d397623f399c95d84deb0a201eda40a8c997b264"
 release_date = "2026-10-09"
 changelog = "eBPF-Lite In-Kernel Tracing, NVMe-oF/RDMA-Lite Acceleration, Shamir Secret Vault, and Live Pod Migration."
 
