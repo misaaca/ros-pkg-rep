@@ -85,15 +85,15 @@ def update_indices():
     # 2. Scan kernel/
     kernel_entry = {}
     if os.path.exists(KERNEL_DIR):
-        for kfile in sorted(os.listdir(KERNEL_DIR)):
+        for kfile in sorted(os.listdir(KERNEL_DIR), reverse=True):
             if kfile.startswith("ros_kernel-") and not kfile.endswith(".sha256") and not kfile.endswith(".toml"):
                 kpath = os.path.join(KERNEL_DIR, kfile)
                 k_sha = sha256_file(kpath)
                 k_size = os.path.getsize(kpath)
 
-                # e.g., ros_kernel-v0.3.28-rumi
+                # e.g., ros_kernel-v0.3.29-rumi
                 parts = kfile.split("-")
-                ver = parts[1].lstrip("v") if len(parts) > 1 else "0.3.28"
+                ver = parts[1].lstrip("v") if len(parts) > 1 else "0.3.29"
                 codename = parts[2] if len(parts) > 2 else "rumi"
 
                 kernel_entry = {
@@ -105,7 +105,7 @@ def update_indices():
                     "size": k_size,
                     "sha256": k_sha,
                     "release_date": "2026-10-09",
-                    "changelog": "Persistent storage auto-detection, NVRAM state recovery, and multi-user sandbox.",
+                    "changelog": "eBPF-Lite In-Kernel Tracing, NVMe-oF/RDMA-Lite Acceleration, Shamir Secret Vault, and Live Pod Migration.",
                 }
 
                 # Update kernel-latest.sha256

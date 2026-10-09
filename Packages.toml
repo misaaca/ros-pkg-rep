@@ -7,14 +7,14 @@ package_count = 10
 
 [kernel]
 name = "ros_kernel"
-version = "0.3.28"
+version = "0.3.29"
 codename = "rumi"
 arch = "x86_64"
-filename = "kernel/ros_kernel-v0.3.28-rumi"
-size = 13920760
-sha256 = "f8cb2ba6978d80e0c5d300985c583c60c6f7897cb273f0ea909bcaf27ce65bee"
+filename = "kernel/ros_kernel-v0.3.29-rumi"
+size = 14224792
+sha256 = "277969cc6bc9d6b2191b4f9d6e8057a56ad271ad4fce1cc7c55ca6c56a789984"
 release_date = "2026-10-09"
-changelog = "Persistent storage auto-detection, NVRAM state recovery, and multi-user sandbox."
+changelog = "eBPF-Lite In-Kernel Tracing, NVMe-oF/RDMA-Lite Acceleration, Shamir Secret Vault, and Live Pod Migration."
 
 [[package]]
 name = "nodejs"
