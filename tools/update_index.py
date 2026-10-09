@@ -105,7 +105,7 @@ def update_indices():
                     "size": k_size,
                     "sha256": k_sha,
                     "release_date": "2026-10-09",
-                    "changelog": "eBPF-Lite In-Kernel Tracing, NVMe-oF/RDMA-Lite Acceleration, Shamir Secret Vault, and Live Pod Migration.",
+                    "changelog": "Production Hardware Realism: RTL8139/Intel e1000/VirtIO-Net, Ubuntu Subiquity Installer, Netplan YAML Engine & Real ICMP Diagnostics.",
                 }
 
                 # Update kernel-latest.sha256

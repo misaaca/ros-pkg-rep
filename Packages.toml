@@ -7,14 +7,14 @@ package_count = 10
 
 [kernel]
 name = "ros_kernel"
-version = "0.3.29"
+version = "0.3.30"
 codename = "rumi"
 arch = "x86_64"
-filename = "kernel/ros_kernel-v0.3.29-rumi"
-size = 14224792
-sha256 = "9700790cdd86c6ddc7444f20d397623f399c95d84deb0a201eda40a8c997b264"
+filename = "kernel/ros_kernel-v0.3.30-rumi"
+size = 14102192
+sha256 = "ee2ac7e6c862c49a5d2568f3cdc6cb13114b00faefb227928ebd1d37a1fa3c06"
 release_date = "2026-10-09"
-changelog = "eBPF-Lite In-Kernel Tracing, NVMe-oF/RDMA-Lite Acceleration, Shamir Secret Vault, and Live Pod Migration."
+changelog = "Production Hardware Realism: RTL8139/Intel e1000/VirtIO-Net, Ubuntu Subiquity Installer, Netplan YAML Engine & Real ICMP Diagnostics."
 
 [[package]]
 name = "nodejs"
