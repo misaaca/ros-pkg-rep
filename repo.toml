@@ -1,0 +1,13 @@
+[repository]
+name = "ros-official"
+description = "Official Package Repository for ROS (Rust Operating System)"
+maintainer = "Mohammad <m.isaac.ahmadi@gmail.com>"
+origin = "misaaca/ros-pkg-rep"
+url = "https://raw.githubusercontent.com/misaaca/ros-pkg-rep/main"
+default_branch = "main"
+architectures = ["x86_64"]
+sections = ["python", "nodejs", "rust", "system", "kernel"]
+packages_index = "Packages.toml"
+packages_json = "Packages.json"
+packages_gz = "Packages.gz"
+signing_enabled = true

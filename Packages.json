@@ -1,0 +1,274 @@
+{
+  "repository": "ros-official",
+  "description": "Official Package Repository for ROS (Rust Operating System)",
+  "upstream_url": "https://raw.githubusercontent.com/misaaca/ros-pkg-rep/main",
+  "total_packages": 10,
+  "kernel": {
+    "name": "ros_kernel",
+    "version": "0.3.28",
+    "codename": "rumi",
+    "arch": "x86_64",
+    "filename": "kernel/ros_kernel-v0.3.28-rumi",
+    "size": 13920760,
+    "sha256": "f8cb2ba6978d80e0c5d300985c583c60c6f7897cb273f0ea909bcaf27ce65bee",
+    "release_date": "2026-10-09",
+    "changelog": "Persistent storage auto-detection, NVRAM state recovery, and multi-user sandbox."
+  },
+  "packages": [
+    {
+      "name": "nodejs",
+      "version": "20.10.0",
+      "section": "nodejs",
+      "arch": "x86_64",
+      "description": "JavaScript runtime built on Chrome's V8 engine for ROS",
+      "installed_size": 1015,
+      "dependencies": [
+        "coreutils"
+      ],
+      "files": [
+        "/bin/node",
+        "/etc/nodejs/node.conf"
+      ],
+      "rop": {
+        "filename": "pool/nodejs/nodejs-20.10.0.rop",
+        "size": 1439,
+        "sha256": "cab2ede59157575997550d8b0409f17f375a564340701a4ad55c06e1eccc1cf1"
+      },
+      "tar": {
+        "filename": "pool/nodejs/nodejs-20.10.0.tar.gz",
+        "size": 724,
+        "sha256": "2f6ff1a0ee4ee5d067599a01e7304171c38fed38b6843b7bbddb8b83427fde9c"
+      }
+    },
+    {
+      "name": "npm",
+      "version": "10.2.0",
+      "section": "nodejs",
+      "arch": "x86_64",
+      "description": "The package manager for JavaScript and Node.js runtime",
+      "installed_size": 3367,
+      "dependencies": [
+        "nodejs"
+      ],
+      "files": [
+        "/bin/npm",
+        "/bin/npx",
+        "/etc/npmrc"
+      ],
+      "rop": {
+        "filename": "pool/nodejs/npm-10.2.0.rop",
+        "size": 3822,
+        "sha256": "986a6fb6e73b25cb02ecea73cb413d837e3e17e62bf510ee366454b3011bba21"
+      },
+      "tar": {
+        "filename": "pool/nodejs/npm-10.2.0.tar.gz",
+        "size": 1579,
+        "sha256": "653088878017aa2a97b842db3ebe9b69f7830ebb0ecff394db446ae2522d8297"
+      }
+    },
+    {
+      "name": "vue-cli",
+      "version": "5.0.8",
+      "section": "nodejs",
+      "arch": "x86_64",
+      "description": "Standard Tooling for Vue.js Development on ROS",
+      "installed_size": 1103,
+      "dependencies": [
+        "nodejs",
+        "npm"
+      ],
+      "files": [
+        "/bin/vue"
+      ],
+      "rop": {
+        "filename": "pool/nodejs/vue-cli-5.0.8.rop",
+        "size": 1432,
+        "sha256": "e93604e6815f0bf08ea9141357ab2dc950d2dd8ab7c8b94adb8a140abad022d6"
+      },
+      "tar": {
+        "filename": "pool/nodejs/vue-cli-5.0.8.tar.gz",
+        "size": 690,
+        "sha256": "b3c33824f02a7ac62743f22c5fc3842093a6c618a6195f154a851dad4932fbc5"
+      }
+    },
+    {
+      "name": "python3-pip",
+      "version": "24.0",
+      "section": "python",
+      "arch": "x86_64",
+      "description": "The PyPA recommended tool for installing Python packages",
+      "installed_size": 4373,
+      "dependencies": [
+        "python3"
+      ],
+      "files": [
+        "/bin/pip",
+        "/bin/pip3",
+        "/lib/python3/site-packages/pip/__init__.py",
+        "/etc/pip.conf"
+      ],
+      "rop": {
+        "filename": "pool/python/python3-pip-24.0.rop",
+        "size": 4975,
+        "sha256": "c36ed628e40c443f517b557b74baa22adf2417614cf0a0066588366799951aed"
+      },
+      "tar": {
+        "filename": "pool/python/python3-pip-24.0.tar.gz",
+        "size": 1081,
+        "sha256": "88daa69d8741bed0f794184df9f3c5e4e9d5cde598e13733770ff938de5ac580"
+      }
+    },
+    {
+      "name": "python3-requests",
+      "version": "2.31.0",
+      "section": "python",
+      "arch": "x86_64",
+      "description": "Python HTTP library for humans",
+      "installed_size": 565,
+      "dependencies": [
+        "python3"
+      ],
+      "files": [
+        "/lib/python3/site-packages/requests/__init__.py"
+      ],
+      "rop": {
+        "filename": "pool/python/python3-requests-2.31.0.rop",
+        "size": 959,
+        "sha256": "d0393eb506fe3a1bda8a8731bc1ed73b10db87950672f2e8b7c096cc91e9bc4a"
+      },
+      "tar": {
+        "filename": "pool/python/python3-requests-2.31.0.tar.gz",
+        "size": 392,
+        "sha256": "27c52f8f0d996aeaaa6fbc1035e93c68412c237658edd30c5fc2d0a11edea280"
+      }
+    },
+    {
+      "name": "python3-venv",
+      "version": "1.0",
+      "section": "python",
+      "arch": "x86_64",
+      "description": "Python virtual environment management module and pyvenv tool",
+      "installed_size": 2512,
+      "dependencies": [
+        "python3"
+      ],
+      "files": [
+        "/bin/pyvenv",
+        "/lib/python3/venv/__init__.py",
+        "/lib/python3/venv/scripts/activate",
+        "/etc/python3/venv.conf"
+      ],
+      "rop": {
+        "filename": "pool/python/python3-venv-1.0.rop",
+        "size": 3166,
+        "sha256": "1c95e5c987bb022c54279495ad15a08975a56ff25262a9920d12fcf2e6de58a9"
+      },
+      "tar": {
+        "filename": "pool/python/python3-venv-1.0.tar.gz",
+        "size": 958,
+        "sha256": "09695ec8735cedb5ad9f936a1cc96e28fbb2baf5af93daabc13a84d2f3519205"
+      }
+    },
+    {
+      "name": "cargo",
+      "version": "1.75.0",
+      "section": "rust",
+      "arch": "x86_64",
+      "description": "Rust's package manager and build system",
+      "installed_size": 2736,
+      "dependencies": [
+        "rustc"
+      ],
+      "files": [
+        "/bin/cargo",
+        "/etc/cargo/config.toml"
+      ],
+      "rop": {
+        "filename": "pool/rust/cargo-1.75.0.rop",
+        "size": 3143,
+        "sha256": "875d10828a3ece524ae9494b3c9176cfe73a2cc4cdb4f812f884fac3b73378b9"
+      },
+      "tar": {
+        "filename": "pool/rust/cargo-1.75.0.tar.gz",
+        "size": 1148,
+        "sha256": "445b7fd3f7c50fcc70374989363d8156bd0e35ddc9dd9910046e1166b2aacb5c"
+      }
+    },
+    {
+      "name": "rustc",
+      "version": "1.75.0",
+      "section": "rust",
+      "arch": "x86_64",
+      "description": "The Rust compiler for system programming on ROS",
+      "installed_size": 937,
+      "dependencies": [
+        "coreutils"
+      ],
+      "files": [
+        "/bin/rustc",
+        "/lib/rustlib/x86_64-unknown-none/lib/libcore.rlib",
+        "/etc/rustc/config.toml"
+      ],
+      "rop": {
+        "filename": "pool/rust/rustc-1.75.0.rop",
+        "size": 1499,
+        "sha256": "d339e384e626365148d8658b93964d8bb71213f25ea84206d3e9869ee3c648b5"
+      },
+      "tar": {
+        "filename": "pool/rust/rustc-1.75.0.tar.gz",
+        "size": 665,
+        "sha256": "e49fc73dc3df2f2f37e2143f8d2d8f16a08c845876d64713d9f6d52ab7832591"
+      }
+    },
+    {
+      "name": "coreutils",
+      "version": "1.2.0",
+      "section": "system",
+      "arch": "x86_64",
+      "description": "Core GNU-compatible utilities for system administration and file manipulation",
+      "installed_size": 151,
+      "dependencies": [],
+      "files": [
+        "/bin/coreutils",
+        "/bin/uname",
+        "/etc/issue"
+      ],
+      "rop": {
+        "filename": "pool/system/coreutils-1.2.0.rop",
+        "size": 641,
+        "sha256": "2c6d00283632585732a1ef87be02aa325347c4eec8b36b3d693a631fb2c508c5"
+      },
+      "tar": {
+        "filename": "pool/system/coreutils-1.2.0.tar.gz",
+        "size": 277,
+        "sha256": "3661efe3e1b70cb12275dd99ad6b0e916b058edff502721e83ca203cd91e8f60"
+      }
+    },
+    {
+      "name": "net-tools",
+      "version": "0.3.0",
+      "section": "system",
+      "arch": "x86_64",
+      "description": "Networking control and diagnostics tools for ROS",
+      "installed_size": 412,
+      "dependencies": [
+        "coreutils"
+      ],
+      "files": [
+        "/bin/netstat",
+        "/etc/hosts",
+        "/etc/resolv.conf"
+      ],
+      "rop": {
+        "filename": "pool/system/net-tools-0.3.0.rop",
+        "size": 892,
+        "sha256": "96b53cd3fd774ff555a3b5b3039e0cbf50ca998f43cc4876badbda415b9321e8"
+      },
+      "tar": {
+        "filename": "pool/system/net-tools-0.3.0.tar.gz",
+        "size": 368,
+        "sha256": "d6fff8bee866e7f5afeccb5b497932b60ee0cb74aec546f03866adc5ba7f3239"
+      }
+    }
+  ]
+}
