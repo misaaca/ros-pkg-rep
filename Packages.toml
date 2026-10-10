@@ -11,8 +11,8 @@ version = "0.3.30"
 codename = "rumi"
 arch = "x86_64"
 filename = "kernel/ros_kernel-v0.3.30-rumi"
-size = 19697264
-sha256 = "754bda23ce5f45fcf097b0b78ad3b54a18eb2b2462ad9e18e70ae0165114f2c2"
+size = 21733088
+sha256 = "f5d948947bc768c6d22861d5e7cec3e101333d8ed4ee0510a5a148e0f63c637e"
 release_date = "2026-10-09"
 changelog = "Production Hardware Realism: RTL8139/Intel e1000/VirtIO-Net, Ubuntu Subiquity Installer, Netplan YAML Engine & Real ICMP Diagnostics."
 
