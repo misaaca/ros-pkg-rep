@@ -104,8 +104,8 @@ def update_indices():
                     "filename": f"kernel/{kfile}",
                     "size": k_size,
                     "sha256": k_sha,
-                    "release_date": "2026-10-09",
-                    "changelog": "Production Hardware Realism: RTL8139/Intel e1000/VirtIO-Net, Ubuntu Subiquity Installer, Netplan YAML Engine & Real ICMP Diagnostics.",
+                    "release_date": "2026-10-12",
+                    "changelog": "OpenSSH Production Fix: RFC 8032 Ed25519 host key signatures, RFC 8439 Poly1305 26-bit limbs, ChaCha20 packet padding alignment, remote exec & interactive shell.",
                 }
 
                 # Update kernel-latest.sha256

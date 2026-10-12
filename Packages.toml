@@ -7,14 +7,14 @@ package_count = 10
 
 [kernel]
 name = "ros_kernel"
-version = "0.3.32"
+version = "0.3.33"
 codename = "rumi"
 arch = "x86_64"
-filename = "kernel/ros_kernel-v0.3.32-rumi"
-size = 21832760
-sha256 = "993cbe8fa302171211ab0024ca45159f747bad4e2502bbb67ed5465de6875963"
-release_date = "2026-10-09"
-changelog = "Production Hardware Realism: RTL8139/Intel e1000/VirtIO-Net, Ubuntu Subiquity Installer, Netplan YAML Engine & Real ICMP Diagnostics."
+filename = "kernel/ros_kernel-v0.3.33-rumi"
+size = 21896968
+sha256 = "ec643fcf49dbb2102667c51301d190bca71b3ca4583ca02763c39db6e33553ec"
+release_date = "2026-10-12"
+changelog = "OpenSSH Production Fix: RFC 8032 Ed25519 host key signatures, RFC 8439 Poly1305 26-bit limbs, ChaCha20 packet padding alignment, remote exec & interactive shell."
 
 [[package]]
 name = "nodejs"
