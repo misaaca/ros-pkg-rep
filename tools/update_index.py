@@ -104,8 +104,8 @@ def update_indices():
                     "filename": f"kernel/{kfile}",
                     "size": k_size,
                     "sha256": k_sha,
-                    "release_date": "2026-10-12",
-                    "changelog": "OpenSSH Production Fix: RFC 8032 Ed25519 host key signatures, RFC 8439 Poly1305 26-bit limbs, ChaCha20 packet padding alignment, remote exec & interactive shell.",
+                    "release_date": "2026-10-14",
+                    "changelog": "TLS 1.3 RFC 8446 handshake fixes, real-time apt update progress, genuine SSH authentication against /etc/passwd, and unified kernel VFS across console and SSH sessions.",
                 }
 
                 # Update kernel-latest.sha256
