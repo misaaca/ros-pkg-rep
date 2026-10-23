@@ -105,7 +105,7 @@ def update_indices():
                     "size": k_size,
                     "sha256": k_sha,
                     "release_date": "2026-10-23",
-                    "changelog": "Native SSH PTY interactive raw mode, Tab completion for commands and paths, Python REPL and script execution, GNU Nano and Vim full terminal editors, wide installer layout, and genuine TLS 1.3/TCP streaming.",
+                    "changelog": "Fix PS/2 keyboard Left Shift release (0xAA) and dot key mapping, fix wget and curl current working directory saving, and automatic URL filename deduction.",
                 }
 
                 # Update kernel-latest.sha256
