@@ -10,7 +10,7 @@
     "arch": "x86_64",
     "filename": "kernel/ros_kernel-v0.3.39-rumi",
     "size": 22109520,
-    "sha256": "11e6f65f9879d5e548c544de225645697981bfa72e269e5640ccfed80732b5c8",
+    "sha256": "30fc28f338ef37fb0659fff3d3e026ee70ac0d062823eb2b825b234059d2d6cb",
     "release_date": "2026-10-23",
     "changelog": "Fix PS/2 keyboard Left Shift release (0xAA) and dot key mapping, fix wget and curl current working directory saving, and automatic URL filename deduction."
   },
