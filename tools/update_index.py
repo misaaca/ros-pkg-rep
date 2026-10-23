@@ -105,7 +105,7 @@ def update_indices():
                     "size": k_size,
                     "sha256": k_sha,
                     "release_date": "2026-10-23",
-                    "changelog": "Genuine TLS 1.3 RFC 8446 connection, ChaCha20-Poly1305 and AES-128-GCM cipher suite negotiation, TCP segment reassembly, and authentic apt update/upgrade and curl/wget CLI.",
+                    "changelog": "Native SSH PTY interactive raw mode, Tab completion for commands and paths, Python REPL and script execution, GNU Nano and Vim full terminal editors, wide installer layout, and genuine TLS 1.3/TCP streaming.",
                 }
 
                 # Update kernel-latest.sha256
