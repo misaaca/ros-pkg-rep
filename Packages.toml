@@ -12,8 +12,8 @@ codename = "rumi"
 build = "a1872d7a"
 arch = "x86_64"
 filename = "kernel/ros_kernel-v0.3.40-rumi"
-size = 22134272
-sha256 = "8a9a37b609a02835d3b2de99ebf9e5c4b82d83b0f9a711450cc36a89d6635723"
+size = 22113984
+sha256 = "8a6d7a1dee4688a8b50847dbc1a7fa6a856a959ef43bfd3576ba261ba108186c"
 release_date = "2026-10-26"
 changelog = "ROS v0.3.40 release with hex build tracking and context-aware Bash-like auto-completion over SSH."
 
