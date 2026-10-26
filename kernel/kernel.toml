@@ -1,10 +1,11 @@
 [kernel]
 name = "ros_kernel"
-version = "0.3.39"
+version = "0.3.40"
 codename = "rumi"
+build = "a1872d7a"
 arch = "x86_64"
-filename = "kernel/ros_kernel-v0.3.39-rumi"
-size = 22109520
-sha256 = "30fc28f338ef37fb0659fff3d3e026ee70ac0d062823eb2b825b234059d2d6cb"
-release_date = "2026-10-23"
-changelog = "Fix PS/2 keyboard Left Shift release (0xAA) and dot key mapping, fix wget and curl current working directory saving, and automatic URL filename deduction."
+filename = "kernel/ros_kernel-v0.3.40-rumi"
+size = 22134272
+sha256 = "8a9a37b609a02835d3b2de99ebf9e5c4b82d83b0f9a711450cc36a89d6635723"
+release_date = "2026-10-26"
+changelog = "ROS v0.3.40 release with hex build tracking and context-aware Bash-like auto-completion over SSH."
