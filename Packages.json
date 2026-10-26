@@ -7,11 +7,11 @@
     "name": "ros_kernel",
     "version": "0.3.40",
     "codename": "rumi",
-    "build": "a1872d7a",
+    "build": "26324339",
     "arch": "x86_64",
     "filename": "kernel/ros_kernel-v0.3.40-rumi",
     "size": 22113984,
-    "sha256": "8a6d7a1dee4688a8b50847dbc1a7fa6a856a959ef43bfd3576ba261ba108186c",
+    "sha256": "f2fc3a9c89e7745c67d8f0f6f19cec8f0e5e4ea000d223b7fdd6daab7b9dc320",
     "release_date": "2026-10-26",
     "changelog": "ROS v0.3.40 release with hex build tracking and context-aware Bash-like auto-completion over SSH."
   },
