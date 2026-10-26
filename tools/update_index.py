@@ -96,16 +96,31 @@ def update_indices():
                 ver = parts[1].lstrip("v") if len(parts) > 1 else "0.3.29"
                 codename = parts[2] if len(parts) > 2 else "rumi"
 
+                build_hex = os.environ.get("ROS_BUILD_HEX", "").strip()
+                if not build_hex:
+                    ros_dir = os.path.join(os.path.dirname(REPO_ROOT), "ROS")
+                    try:
+                        import subprocess
+                        build_hex = subprocess.check_output(
+                            ["git", "-C", ros_dir, "rev-parse", "--short=8", "HEAD"],
+                            text=True, stderr=subprocess.DEVNULL
+                        ).strip()
+                    except Exception:
+                        build_hex = k_sha[:8]
+                if not build_hex:
+                    build_hex = k_sha[:8]
+
                 kernel_entry = {
                     "name": "ros_kernel",
                     "version": ver,
                     "codename": codename,
+                    "build": build_hex,
                     "arch": "x86_64",
                     "filename": f"kernel/{kfile}",
                     "size": k_size,
                     "sha256": k_sha,
-                    "release_date": "2026-10-23",
-                    "changelog": "Fix PS/2 keyboard Left Shift release (0xAA) and dot key mapping, fix wget and curl current working directory saving, and automatic URL filename deduction.",
+                    "release_date": "2026-10-26",
+                    "changelog": "ROS v0.3.40 release with hex build tracking and context-aware Bash-like auto-completion over SSH.",
                 }
 
                 # Update kernel-latest.sha256
@@ -119,6 +134,7 @@ def update_indices():
                         f'name = "{kernel_entry["name"]}"\n'
                         f'version = "{kernel_entry["version"]}"\n'
                         f'codename = "{kernel_entry["codename"]}"\n'
+                        f'build = "{kernel_entry["build"]}"\n'
                         f'arch = "{kernel_entry["arch"]}"\n'
                         f'filename = "{kernel_entry["filename"]}"\n'
                         f'size = {kernel_entry["size"]}\n'
@@ -126,7 +142,7 @@ def update_indices():
                         f'release_date = "{kernel_entry["release_date"]}"\n'
                         f'changelog = "{kernel_entry["changelog"]}"\n'
                     )
-                print(f"Indexed Kernel: {kfile} (v{ver}-{codename}) - {k_size} bytes - {k_sha[:16]}...")
+                print(f"Indexed Kernel: {kfile} (v{ver}-{codename} build {build_hex}) - {k_size} bytes - {k_sha[:16]}...")
                 break
 
     # 3. Generate Packages.json
@@ -158,6 +174,7 @@ def update_indices():
             f'name = "{kernel_entry["name"]}"',
             f'version = "{kernel_entry["version"]}"',
             f'codename = "{kernel_entry["codename"]}"',
+            f'build = "{kernel_entry["build"]}"',
             f'arch = "{kernel_entry["arch"]}"',
             f'filename = "{kernel_entry["filename"]}"',
             f'size = {kernel_entry["size"]}',
